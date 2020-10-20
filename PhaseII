@@ -85,8 +85,8 @@ CREATE TABLE test (
     id varchar(100) NOT NULL,
     test_status varchar(100) NOT NULL,
     pool_id varchar(100) NOT NULL,
-    appointment_time time NOT NULL,
     appointment_date date NOT NULL,
+    appointment_time time NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (pool_id) REFERENCES pool(id),
     FOREIGN KEY (appointment_date, appointment_time) REFERENCES appointment(apt_date, apt_time)
